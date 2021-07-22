@@ -440,7 +440,6 @@
             <Pin Id="DZpf7PzDVayPFBVPcvU9V4" Name="Position" Kind="InputPin" />
             <Pin Id="AwBrdkWKCctOWpjoTtlykb" Name="Radius" Kind="InputPin" />
             <Pin Id="OHvqta3IdXXLp28L8OHL6Q" Name="Output" Kind="OutputPin" />
-            <Pin Id="NYHSWqlWcpPMEt1MsBAOH9" Name="Distance" Kind="OutputPin" />
           </Node>
           <Node Bounds="-388,767,71,19" Id="N7pifvMFOS5MoOaOrbSnOx">
             <p:NodeReference LastCategoryFullName="Fuse.Common.SDF.3D" LastSymbolSource="Fuse.Common.SDF.vl">
@@ -451,7 +450,6 @@
             <Pin Id="O97yapXfP6tLIVdJz7LydQ" Name="Radius" Kind="InputPin" />
             <Pin Id="JsLWeFsJSCsO2ONluOgUgP" Name="Height" Kind="InputPin" />
             <Pin Id="S7tmpRa9oDQL5lBMCuJf5t" Name="Output" Kind="OutputPin" />
-            <Pin Id="VAJYJFp4JboLOiJvejiS2Z" Name="Distance" Kind="OutputPin" />
           </Node>
           <Node Bounds="-298,744,43,19" Id="JBfyYsJUsdjL24yFAKfpZp">
             <p:NodeReference LastCategoryFullName="Fuse.Core.Base" LastSymbolSource="Fuse.Core.Base.vl">
@@ -606,7 +604,6 @@
             <Pin Id="PtIJFxaj6FJL19jZ50Dc0e" Name="Height" Kind="InputPin" />
             <Pin Id="KIlOiocSWqTNT7lJqHVUu0" Name="Normal" Kind="InputPin" />
             <Pin Id="Cn2NMe7eViyQZeU1Alk6A8" Name="Output" Kind="OutputPin" />
-            <Pin Id="BvSCEs4Q7HsPkAqqfMwcq9" Name="Distance" Kind="OutputPin" />
           </Node>
           <Node Bounds="-23,671,145,19" Id="N5660NGZ7q2Pdxbo1UnuDS">
             <p:NodeReference LastCategoryFullName="Fuse.Common.Noise" LastSymbolSource="Fuse.Common.Noise.vl">
@@ -683,7 +680,6 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="UPHLlqXkcdIN8r6VGiScVp" Name="Output" Kind="OutputPin" />
-            <Pin Id="NKzCRzsAJGLLFNvyieQQK1" Name="Distance" Kind="OutputPin" />
           </Node>
           <Pad Id="TFDJmPXxr4IPuKxFQewPYQ" Comment="AO Enabled" Bounds="524,1324,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -709,7 +705,7 @@
             <Pin Id="LOhuFDtQc0JOGGnAncb8Il" Name="Input 4" Kind="InputPin" />
             <Pin Id="R4wemTR6eSXLhG8dVjqEi8" Name="Input 5" Kind="InputPin" />
           </Node>
-          <Pad Id="J2SELaaPTmiOcaMCssqmyy" Comment="Index" Bounds="-320,945,240,34" ShowValueBox="true" isIOBox="true" Value="4">
+          <Pad Id="J2SELaaPTmiOcaMCssqmyy" Comment="Index" Bounds="-310,935,240,34" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -1019,9 +1015,8 @@
               </CategoryReference>
             </p:NodeReference>
             <Pin Id="VcZk4oKUc9MLPRvhJvus7D" Name="Position" Kind="InputPin" />
-            <Pin Id="LWLBVxA3MhyPa0hJrzwVOs" Name="Output" Kind="OutputPin" />
-            <Pin Id="NdKtgoUyXkIPq3nHlOrqUV" Name="Distance" Kind="OutputPin" />
             <Pin Id="FDpdePymt77L3O6ehGnR8A" Name="Size" Kind="InputPin" />
+            <Pin Id="LWLBVxA3MhyPa0hJrzwVOs" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="905,605,43,19" Id="VvlcSdR0lWLMApTaiDAeGC">
             <p:NodeReference LastCategoryFullName="Fuse.Core.Base" LastSymbolSource="Fuse.Core.Base.vl">
@@ -1231,7 +1226,6 @@
             <Pin Id="GJeCOfuIGIDOKVALMrllev" Name="Height" Kind="InputPin" />
             <Pin Id="P4WNMkhnyCyOnrVevft8OR" Name="Normal" Kind="InputPin" />
             <Pin Id="QM4vmxhc9qTQFogCHqtlCc" Name="Output" Kind="OutputPin" />
-            <Pin Id="AN5KOLUDB90M53P2bs3kPm" Name="Distance" Kind="OutputPin" />
           </Node>
           <Pad Id="Hos2WojpnqZPYz65ZGkiCp" Comment="Normal" Bounds="-523,1084,35,43" ShowValueBox="true" isIOBox="true" Value="0.005, 1, 0">
             <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
@@ -1337,7 +1331,7 @@
             </p:NodeReference>
             <Pin Id="LK6pb80XHgnQSQ2CCHcnxZ" Name="Ray" Kind="OutputPin" />
           </Node>
-          <Node Bounds="-518,978,165,19" Id="CJUmY0LfPYDLdCnUnWu4xt">
+          <Node Bounds="-520,957,165,19" Id="CJUmY0LfPYDLdCnUnWu4xt">
             <p:NodeReference LastCategoryFullName="Fuse.Common.SDF.3D" LastSymbolSource="Fuse.Common.SDF.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CombineSDF" />
@@ -1345,14 +1339,13 @@
                 <p:OuterCategoryReference Kind="Category" Name="SDF" NeedsToBeDirectParent="true" />
               </CategoryReference>
             </p:NodeReference>
-            <Pin Id="BRu84xa2tb0Orncxe4CGRy" Name="Position" Kind="InputPin" />
-            <Pin Id="PQ9PA5zuZXxNUmENrquWfY" Name="SDF0" Kind="InputPin" />
-            <Pin Id="Hcb0HKrtZdXPSELA2mvPfx" Name="SDF1" Kind="InputPin" />
-            <Pin Id="JYpZYzOLklbLqle2RHeFIC" Name="P0" Kind="InputPin" />
+            <Pin Id="HnpsWQQ8FS2OvRFL3nEdz3" Name="Input" Kind="InputPin" />
+            <Pin Id="MPWdngtpDOMNj94SucnZAD" Name="Input 2" Kind="InputPin" />
             <Pin Id="ROuXr2EKtI4MGIvJLUZo59" Name="P1" Kind="InputPin" />
+            <Pin Id="MDzGbzN61tvK9uywmupLGW" Name="P2" Kind="InputPin" />
             <Pin Id="Gcn6OzwMq9TQCamxHA0Oxq" Name="Op" Kind="InputPin" />
             <Pin Id="F38o7c2AUmjPyUnw5VdfJE" Name="Output" Kind="OutputPin" />
-            <Pin Id="Td1jeyQ0R5YPEMfXg3RuBU" Name="Distance" Kind="OutputPin" />
+            <Pin Id="JsXsq35RpQaPeooxT5oaJS" Name="Op" Kind="OutputPin" />
           </Node>
           <Pad Id="GjqxPfmE3b8NbNsl5gzesn" SlotId="SkwyjMtsZqGPcr9CwJHxqp" Bounds="-33,1099" />
           <Pad Id="PWcOPABGa62OvHF4EjKaQV" SlotId="SkwyjMtsZqGPcr9CwJHxqp" Bounds="-792,1288" />
@@ -1443,14 +1436,13 @@
                 <p:OuterCategoryReference Kind="Category" Name="SDF" NeedsToBeDirectParent="true" />
               </CategoryReference>
             </p:NodeReference>
-            <Pin Id="QcmyiADnmE8Mb8hEwiZWTy" Name="Position" Kind="InputPin" />
-            <Pin Id="N9LU4iLuKM5Num0UUytTJD" Name="SDF0" Kind="InputPin" />
-            <Pin Id="JC741xSC2uXO3D0nIVkFc3" Name="SDF1" Kind="InputPin" />
-            <Pin Id="TB4DaRoKxrKPAVRFYy6mDJ" Name="P0" Kind="InputPin" />
+            <Pin Id="Hvn92D8jE9wMJmkRn16ntU" Name="Input" Kind="InputPin" />
+            <Pin Id="Nx9u5yHXkEEMCq95rqXWe8" Name="Input 2" Kind="InputPin" />
             <Pin Id="Cg6ePRIroHmQK1Y4Tegsx5" Name="P1" Kind="InputPin" />
+            <Pin Id="QAORthqOMBENscuGUaB0gz" Name="P2" Kind="InputPin" />
             <Pin Id="NmldlubyX9JNe9KE68o4wM" Name="Op" Kind="InputPin" />
             <Pin Id="AXio3lSZS32PFZIwf5Al5I" Name="Output" Kind="OutputPin" />
-            <Pin Id="HwUcDoF2bnDPQIWY4PU7yn" Name="Distance" Kind="OutputPin" />
+            <Pin Id="Qk0q7ixYQVmOt4XkiZoETb" Name="Op" Kind="OutputPin" />
           </Node>
           <Pad Id="VvZE1dF1QoRNXnMw31Y8hG" Comment="Op" Bounds="889,711,122,15" ShowValueBox="true" isIOBox="true" Value="Intersect">
             <p:TypeAnnotation LastCategoryFullName="Fuse.Common.SDF" LastSymbolSource="Fuse.Common.SDF.vl">
@@ -1585,19 +1577,18 @@
         <Link Id="EiD0YwytoxYQDXY9W8mT5w" Ids="ExCrB2M3xCAMeLlj38NXs3,QTIDwp5yOXXM2Ha3E09ckC" />
         <Link Id="LONMQaTEalhOKp7To6T5NR" Ids="DG7zeCI5PfKOLOvNHH8S7S,R4wemTR6eSXLhG8dVjqEi8" />
         <Link Id="MPtl5ZiIAcDLQ5f4BT8H6h" Ids="A51oItmIF0hM1k885xVJ05,RhTAwFqIo9fOscqLojauQB" />
-        <Link Id="SiaG7UNKBWsMT7cuJDMorW" Ids="NYHSWqlWcpPMEt1MsBAOH9,JjpcyrVhYCLQGqkvp4dQf3" />
-        <Link Id="NPVnFxM6v1rQUMQJd2ZLnZ" Ids="OHvqta3IdXXLp28L8OHL6Q,PQ9PA5zuZXxNUmENrquWfY" />
-        <Link Id="D2S6QXEc1YpPARVRowpO3e" Ids="S7tmpRa9oDQL5lBMCuJf5t,Hcb0HKrtZdXPSELA2mvPfx" />
-        <Link Id="JUw3EYqfZTmPl96q2ppVQt" Ids="ELo0SoqmrG6LSwhjSGjSiB,JYpZYzOLklbLqle2RHeFIC" />
         <Link Id="Lickis0OOmRQK2WBVZfBWk" Ids="BCdeX2CuPaTNaifyAZZ7xi,ROuXr2EKtI4MGIvJLUZo59" />
-        <Link Id="PvwoK00qQpnLRSFCyJd7ET" Ids="Td1jeyQ0R5YPEMfXg3RuBU,IevbU1IKaTuODnWxBLtT2p" />
-        <Link Id="Vuwa1bOZOQ7NQdrpeq2Cko" Ids="BvSCEs4Q7HsPkAqqfMwcq9,GzKIB0Usk6HN2xZSXL9Sd5" />
-        <Link Id="Kgu6vcLMOGEQZJQdUJn5n3" Ids="LWLBVxA3MhyPa0hJrzwVOs,JC741xSC2uXO3D0nIVkFc3" />
         <Link Id="MV4YziP3W2pQJW2w88peLy" Ids="VvZE1dF1QoRNXnMw31Y8hG,NmldlubyX9JNe9KE68o4wM" />
         <Link Id="VaXSpBQSutZOLzZbJdM05z" Ids="TLxIZSOOIf2LLup1Jg7nqH,DRmxVg6PtoAOciXxRcxP7D" />
-        <Link Id="FKvpLf8ZvJIPobkcFVrbIL" Ids="UPHLlqXkcdIN8r6VGiScVp,N9LU4iLuKM5Num0UUytTJD" />
-        <Link Id="H2TF305EJpFLbo2mxDREUf" Ids="KVwAGLzpZ1HNwDuXD63RRe,QcmyiADnmE8Mb8hEwiZWTy" />
-        <Link Id="HYjNhk3xc8iLVlHXeXL4HL" Ids="HwUcDoF2bnDPQIWY4PU7yn,Uf6xQOCSjBxOFaY0XTh90d" />
+        <Link Id="I5qCRwdJkDzPU5cFgwmHHV" Ids="UPHLlqXkcdIN8r6VGiScVp,Hvn92D8jE9wMJmkRn16ntU" />
+        <Link Id="RexppOWPVxoPFbvrC6Qe4S" Ids="LWLBVxA3MhyPa0hJrzwVOs,Nx9u5yHXkEEMCq95rqXWe8" />
+        <Link Id="Ol7BuImDnvFPoFAKs7mJgo" Ids="AXio3lSZS32PFZIwf5Al5I,Uf6xQOCSjBxOFaY0XTh90d" />
+        <Link Id="Gdsbs7a0yeiMGCEWsbK3lp" Ids="Cn2NMe7eViyQZeU1Alk6A8,GzKIB0Usk6HN2xZSXL9Sd5" />
+        <Link Id="VMvfrkple0SPi4gU2iDR5b" Ids="OHvqta3IdXXLp28L8OHL6Q,JjpcyrVhYCLQGqkvp4dQf3" />
+        <Link Id="LZRJWPO2fKUOM4H7M8uZK5" Ids="OHvqta3IdXXLp28L8OHL6Q,HnpsWQQ8FS2OvRFL3nEdz3" />
+        <Link Id="GmTzDS3idzeOZQJw5lOPxq" Ids="S7tmpRa9oDQL5lBMCuJf5t,MPWdngtpDOMNj94SucnZAD" />
+        <Link Id="PPeEtRfwSWiNI5HkEggoYi" Ids="ELo0SoqmrG6LSwhjSGjSiB,MDzGbzN61tvK9uywmupLGW" />
+        <Link Id="MSyyG2sANjZOaTgJVRLkD6" Ids="F38o7c2AUmjPyUnw5VdfJE,IevbU1IKaTuODnWxBLtT2p" />
       </Patch>
     </Node>
   </Patch>

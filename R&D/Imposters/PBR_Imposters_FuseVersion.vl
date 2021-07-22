@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="IZNEdmWwsqTPmRYNCw6rdu" LanguageVersion="2021.4.0.208" Version="0.128">
-  <NugetDependency Id="UMjQW1rcsHzLbQEEvmlyux" Location="VL.CoreLib" Version="2021.4.0-0208-g006008faa3" />
+<Document xmlns:p="property" Id="IZNEdmWwsqTPmRYNCw6rdu" LanguageVersion="2021.4.0.222" Version="0.128">
+  <NugetDependency Id="UMjQW1rcsHzLbQEEvmlyux" Location="VL.CoreLib" Version="2021.4.0-0222-gc154a95170" />
   <Patch Id="E3ImUTd2YNGObBvmdtwudp">
     <Canvas Id="UxUkpQTPbkoLBVXkPUqMgv" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -574,9 +574,9 @@
                 <Choice Kind="ProcessAppFlag" Name="StructuredBuffer" />
               </p:NodeReference>
               <Pin Id="VRSXjqXSEmpOZPzKVziwHb" Name="Struct" Kind="InputPin" />
-              <Pin Id="G5hdFIik98ONkrXW40Woda" Name="Force Recreate" Kind="InputPin" />
               <Pin Id="E8miLADhhL0LTMeZH0R2hy" Name="Element Count" Kind="InputPin" />
               <Pin Id="PtIWN3BeuxqOPHX8yTuwMO" Name="Is Unordered Access" Kind="InputPin" />
+              <Pin Id="G5hdFIik98ONkrXW40Woda" Name="Force Recreate" Kind="InputPin" />
               <Pin Id="N4z72ZWBsWLPMHNVuKoW1l" Name="State Output" Kind="OutputPin" />
               <Pin Id="F221nNAOSX6P34leoAWCR5" Name="Output" Kind="OutputPin" />
               <Pin Id="Dy10ICPX9SFNhzT5dY9vIN" Name="Buffer" Kind="OutputPin" />
@@ -1165,7 +1165,6 @@
               <Pin Id="KXpNFmnRdQENf0dwS3bkQG" Name="Value" Kind="InputPin" />
               <Pin Id="NeKsOrRxkdPLnQObTquhS4" Name="Particle Size" Kind="InputPin" />
               <Pin Id="TxkJhZbvAm7OjQmhSOVQvP" Name="Particles Buffer" Kind="InputPin" />
-              <Pin Id="G6T8ORMs78NNajHJZ6OnSk" Name="Random Values" Kind="InputPin" />
               <Pin Id="KFU2c3HkDkRQFtWlRFYMcE" Name="P Norm" Kind="InputPin" />
               <Pin Id="EFfcoEBeJa6ME1SkP42T4t" Name="Output" Kind="OutputPin" />
             </Node>
@@ -1776,7 +1775,7 @@
               <Pin Id="Uva7YN24Jr4LKVA8esBrZ8" Name="Value" Kind="InputPin" />
               <Pin Id="LqgxKPu1WvzPsGQKV33HIH" Name="Output" Kind="OutputPin" />
             </Node>
-            <Pad Id="Mg0xNku1OfUNNITYsPibdV" Comment="" Bounds="1516,647,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <Pad Id="Mg0xNku1OfUNNITYsPibdV" Comment="" Bounds="1516,647,35,15" ShowValueBox="true" isIOBox="true" Value="0.44">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
@@ -2243,6 +2242,28 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
+            <Node Bounds="859,670,16,19" Id="FOkQHn2S09CNZiagoL7H37">
+              <p:NodeReference LastCategoryFullName="Fuse.Core.Base" LastSymbolSource="Fuse.Core.Base.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="GPUIn" />
+              </p:NodeReference>
+              <Pin Id="J5clwAhUzOoL3s9bAkBeY6" Name="Input" Kind="InputPin" />
+              <Pin Id="BRvOTNJfIOINfPkTA80M0l" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="856,714,25,19" Id="GZXiSDIsOYEOMgvPlUKzlN">
+              <p:NodeReference LastCategoryFullName="Fuse.Core.Base" LastSymbolSource="Fuse.Core.Base.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="ToShaderFX" />
+              </p:NodeReference>
+              <Pin Id="QNqQseecveIP5kNR1HCpUB" Name="GpuValue" Kind="InputPin" />
+              <Pin Id="GGPDMnGHl9hL2Tw5kD08Kf" Name="Output" Kind="OutputPin" />
+              <Pin Id="TBI8s7oP3LYOZADAdgjtYk" Name="Shader Code" Kind="OutputPin" />
+            </Node>
+            <Pad Id="QN8WXJ4QS3TMZt6XssLLGn" Comment="" Bounds="773,620,35,57" ShowValueBox="true" isIOBox="true" Value="0.34, 0.34, 0.34, 0.34">
+              <p:TypeAnnotation LastCategoryFullName="3D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector4" />
+              </p:TypeAnnotation>
+            </Pad>
           </Canvas>
           <ProcessDefinition Id="Kg5hCwbCqQYN57I5kF4o6O">
             <Fragment Id="CkYCBqrxqOaNKIgdk5RXL0" Patch="KHxRIGIn6R8MnklE5HmneZ" Enabled="true" />
@@ -2305,7 +2326,6 @@
           <Link Id="QfMrYVzYaW1Pfs9D80SGj9" Ids="QyllgnduoXdPXlquwqgC8S,F9NxGpcFVvhLbn6rTVG1p0" />
           <Link Id="UXYKGAEpG0nOGYJQsiLz4v" Ids="VY714E8gpP6MkwXeDumYL9,H2XXvF3QOvlOxwN8pqy0RP" />
           <Link Id="Oj9nTVQzXHqMDoUSNyMSAe" Ids="SGpz9U0qAdMOPoVp2nOX7a,JqNWsNkwxBnNRjbabIhbkq" />
-          <Link Id="N1k5wU57hEXOUNqpxKGGND" Ids="C7QY9Eq9qRQNHsCXtGX2r9,HJ2iF5kV3LHLaAAwqSFIKo" />
           <Link Id="POqWuG9lF88M9ogwMYwWQg" Ids="IvvKpUStOO0MreaKIxt3Ix,RP1IXH3IZYALjSIZtxSiyW" />
           <Link Id="F6jycm2YkYOM9GW2G2PqJT" Ids="CKsfu48sheeLMjTWjXsqSV,UXm8mf7eS8bPGVLprpEtPV" />
           <Link Id="RU0yuj9mOFWMrnEaSzLCiF" Ids="AvCyC0td2COLWv3TwQbUSd,HhnfvOGirskN7Puz6V5cWX" />
@@ -2327,6 +2347,10 @@
           <Link Id="Gz5qVW1sudTNml6BZJOKro" Ids="FgNEa6jktNdQYJlpKOrBTk,BGYik7pPwPvOoAuevY4WNx" />
           <Link Id="TRJCnYc7ZJOLFmVIEHrdwW" Ids="HRHNoEXrJ55ODhvy5SU2GX,MNMWyweFzFLQOr9DP3P7pf" />
           <Link Id="NELSTWxxytNMGtQfJ24uIe" Ids="GyCcCcwdrOZNMCOlmepe7v,IVnOeXd37bfOgCxL1L8QFT" />
+          <Link Id="Uq7NQvEal0SNwGO5mtQSPr" Ids="PlLEZJ97lnmPoELznNVHaY,SGpz9U0qAdMOPoVp2nOX7a" />
+          <Link Id="QJKA7R73bJQN0uNtb79VLE" Ids="GGPDMnGHl9hL2Tw5kD08Kf,HJ2iF5kV3LHLaAAwqSFIKo" />
+          <Link Id="VCsnGodXvrKNiDUcRJn1J8" Ids="BRvOTNJfIOINfPkTA80M0l,QNqQseecveIP5kNR1HCpUB" />
+          <Link Id="Q6i1238IttPL937I1eBKft" Ids="QN8WXJ4QS3TMZt6XssLLGn,J5clwAhUzOoL3s9bAkBeY6" />
         </Patch>
       </Node>
       <!--
@@ -3048,10 +3072,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Dy0zFD8uTmYMzk069ST9sM" Location="VL.CoreLib" Version="2021.4.0-0208-g006008faa3" />
-  <NugetDependency Id="Lp16f7qHFemQFVwR2545bJ" Location="VL.Stride.Runtime" Version="2021.4.0-0208-g006008faa3" />
+  <NugetDependency Id="Dy0zFD8uTmYMzk069ST9sM" Location="VL.CoreLib" Version="2021.4.0-0222-gc154a95170" />
+  <NugetDependency Id="Lp16f7qHFemQFVwR2545bJ" Location="VL.Stride.Runtime" Version="2021.4.0-0222-gc154a95170" />
   <PlatformDependency Id="Op16f7qHFemQFVwR2545bJ" Location="VL.Stride.Runtime.dll" />
-  <NugetDependency Id="IS68NBjN33xNudq4Meb8FU" Location="VL.EditingFramework" Version="2021.4.0-0208-g006008faa3" />
-  <NugetDependency Id="N2EmPdu0p2zMRRd7X1tgPt" Location="VL.Stride.Windows" Version="2021.4.0-0208-g006008faa3" />
+  <NugetDependency Id="IS68NBjN33xNudq4Meb8FU" Location="VL.EditingFramework" Version="2021.4.0-0222-gc154a95170" />
+  <NugetDependency Id="N2EmPdu0p2zMRRd7X1tgPt" Location="VL.Stride.Windows" Version="2021.4.0-0222-gc154a95170" />
   <NugetDependency Id="A0QVCGjUVM7PpZQ4cAxnyu" Location="VL.Fuse" Version="0.0.0.0" />
 </Document>

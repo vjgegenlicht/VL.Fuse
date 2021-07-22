@@ -213,6 +213,12 @@ shader FuseCoreTransform : FuseCoreMath
 		);
 	}
 
+	float3 rotateVector( float4 quat, float4 vec ) {
+        // https://twistedpairdevelopment.wordpress.com/2013/02/11/rotating-a-vector-by-a-quaternion-in-glsl/
+        float4 qv = mulQuat( quat, vec );
+        return mulQuat( qv, float4(-quat.x, -quat.y, -quat.z, quat.w) ).xyz;
+    }
+
 	float3x3 qRot3x3(float4 q)
 	{
 		float3x3 m = identity3x3();
