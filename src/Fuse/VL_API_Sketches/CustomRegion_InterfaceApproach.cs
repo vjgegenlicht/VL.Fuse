@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using VL.Core;
 using VL.Lib.Collections;
@@ -25,7 +26,7 @@ namespace Fuse.VL_API_Sketches.InterfaceApproach
         /// <param name="inputs">The inputs from the inside perspective</param>
         /// <param name="outputs">The outputs from the inside perspective</param>
         /// <returns></returns>
-        public ICustomRegionPatch Update(Spread<object> inputs, out Spread<object> outputs);
+        public ICustomRegionPatch Update(IEnumerable inputs, out Spread<object> outputs);
     }
 
     /// <summary>
@@ -51,7 +52,7 @@ namespace Fuse.VL_API_Sketches.InterfaceApproach
         /// These may be different from the values that you got from the patch update call.
         /// </summary>
         /// <param name="outputs"></param>
-        public void WriteOutputs(IEnumerable<object> outputs);
+        public void WriteOutputs(IEnumerable outputs);
 
         /// <summary>
         /// Create a patch state
