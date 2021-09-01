@@ -61,6 +61,6 @@ namespace Fuse.VL_API_Sketches.InterfaceApproach
         /// <param name="inputs"></param>
         /// <param name="outputs"></param>
         /// <returns></returns>
-        public ICustomRegionPatch CreateRegionPatch(NodeContext Context, Spread<object> inputs, out Spread<object> outputs);
+        public ICustomRegionPatch CreateRegionPatch(NodeContext Context, IEnumerable inputs, out Spread<object> outputs);
     }
 }

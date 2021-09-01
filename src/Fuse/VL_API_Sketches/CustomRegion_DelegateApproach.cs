@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using VL.Core;
 using VL.Lib.Collections;
@@ -12,9 +13,10 @@ namespace Fuse.VL_API_Sketches.DelegateApproach
         public int Index;
     }
 
-    public delegate void RegionPatchCreator(in Spread<object> inputs, out object stateOutput, out Spread<object> outputs);
-    public delegate void RegionPatchUpdator(in object stateInput, in Spread<object> inputs, out object stateOutput, out Spread<object> outputs);
-    //public delegate void RegionPatchDisposer(in object stateInput);
+    public delegate void RegionPatchCreator(IEnumerable initalInputs, out object stateOutput, out Spread<object> initialOutputs);
+    public delegate void RegionPatchUpdator(object stateInput, IEnumerable inputs, out object stateOutput, out Spread<object> outputs);
+    public delegate void RegionPatchUpdator2(object sateInput, IEnumerable inputs, out object stteOutput, out Spread<object> outputs);
+    public delegate void RegionPatchDisposer(object stateInput);
 
     /// <summary>
     /// Represents the application of your region by the user, the values that flow into the region and outof. 
@@ -26,64 +28,58 @@ namespace Fuse.VL_API_Sketches.DelegateApproach
         public Spread<BorderControlPointDescription> Outputs { get; }
         public RegionPatchCreator PatchCreator;
         public RegionPatchUpdator PatchUpdator;
-        //public RegionPatchDisposer PatchDisposer;
+        public RegionPatchDisposer PatchDisposer;
 
-        public Spread<object> ReadInputs()
-        {
-            return null;
-        }
+        public Spread<object> InputValues { get; internal set; }
+        public Spread<object> OutputValues { set; internal get; }
 
-        public void WriteOutputs(IEnumerable<object> outputs)
-        {
-        }
-
-        public void CreateRegionPatch(NodeContext nodeContext, in Spread<object> inputs, out CustomRegionPatch regionPatch, out Spread<object> outputs)
-        {
-            regionPatch = new CustomRegionPatch(nodeContext, this);
-            outputs = null;
-        }
+        //public void CreateRegionPatch(NodeContext nodeContext, in Spread<object> inputs, out CustomRegionPatch regionPatch, out Spread<object> outputs)
+        //{
+        //    regionPatch = new CustomRegionPatch(nodeContext, this);
+        //    outputs = null;
+        //}
     }
 
-    /// <summary>
-    /// Represents the body inside the region as patched by the user. 
-    /// </summary>
-    public struct CustomRegionPatch : IDisposable
-    {
-        object State;
-        CustomRegion Region;
-        NodeContext NodeContext;
+    ///// <summary>
+    ///// Represents the body inside the region as patched by the user. 
+    ///// </summary>
+    //public struct CustomRegionPatch : IDisposable
+    //{
+    //    object State;
+    //    CustomRegion Region;
+    //    NodeContext NodeContext;
 
-        public CustomRegionPatch(object State) : this()
-        {
-            this.State = State;
-        }
+    //    public CustomRegionPatch(object State) : this()
+    //    {
+    //        this.State = State;
+    //    }
 
-        public CustomRegionPatch(NodeContext NodeContext, CustomRegion CustomRegion) : this()
-        {
-            this.NodeContext = NodeContext;
-            this.Region = CustomRegion;
-        }
+    //    public CustomRegionPatch(NodeContext NodeContext, CustomRegion CustomRegion) : this()
+    //    {
+    //        this.NodeContext = NodeContext;
+    //        this.Region = CustomRegion;
+    //    }
 
-        public CustomRegionPatch Update(in Spread<object> inputs, out Spread<object> outputs)
-        {
-            Region.PatchUpdator(in State, in inputs, out var newState, out outputs);
-            if (NodeContext.IsImmutable)
-            {
-                if (newState != State)
-                    return new CustomRegionPatch(newState);
-                else
-                    return this;
-            }
-            else
-            {
-                State = newState;
-                return this;
-            }
-        }
+    //    public CustomRegionPatch Update(in Spread<object> inputs, out Spread<object> outputs)
+    //    {
+    //        Region.PatchUpdator(in State, in inputs, out var newState, out outputs);
+    //        if (NodeContext.IsImmutable)
+    //        {
+    //            if (newState != State)
+    //                return new CustomRegionPatch(newState);
+    //            else
+    //                return this;
+    //        }
+    //        else
+    //        {
+    //            State = newState;
+    //            return this;
+    //        }
+    //    }
 
-        public void Dispose()
-        {
-            (State as IDisposable)?.Dispose();
-        }
-    }
+    //    public void Dispose()
+    //    {
+    //        (State as IDisposable)?.Dispose();
+    //    }
+    //}
 }
