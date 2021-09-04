@@ -1,0 +1,55 @@
+shader FuseGeometryMeshSurfaceVSExtension : FuseGeometryMeshSurface, ShaderBaseStream, TransformationBase, PositionStream4, Texturing, ShadingBase, NormalBase
+{
+
+    // End of the VS (usually skinning)
+    // could also put override here to do things sooner
+    /*
+    stage override void PreTransformPosition() 
+    {
+        base.PreTransformPosition();
+    }
+    */
+    
+
+    // End of tessellation (usually displacement mapping in world space, etc...)
+    stage override void TransformPosition() 
+    {
+        // run base functions first
+        base.TransformPosition();
+        base.GenerateNormal_VS();
+
+        // had to do a little juggling to make this work, looks like it should be compacted, but just leave it ;)
+        float3 p =  streams.PositionWS.xyz;
+        float3 n = streams.normalWS.xyz;
+        float2 uv = streams.TexCoord.xy;
+        MeshSurface surface = makeSurface(p, n, uv);
+        modifyMeshSurface(surface);
+        streams.PositionWS.xyz = streams.msP;
+        streams.normalWS.xyz = streams.msN;
+        streams.TexCoord.xy = streams.msUV;
+    }
+
+    
+    // normals handled a little seperatly 
+    override stage void GenerateNormal_VS()
+    {
+        base.GenerateNormal_VS();
+        streams.normalWS.xyz = streams.msN;
+    }
+    
+
+
+    // At the end of the geometry pipeline (to generate ShadingPosition)
+    /*
+    stage override void PostTransformPosition()
+    {
+    }
+    */
+
+    /*
+    stage override float4 Shading() 
+    {
+        return base.Shading();
+    }
+     */
+};
