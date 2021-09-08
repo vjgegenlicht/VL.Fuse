@@ -47,7 +47,7 @@ namespace Fuse
             return TypeHelpers.GetGpuTypeForType<T>();
         }
 
-        public override string ID => Name + "_" + HashCode;
+        public override string ID => Name + "_${id_" + HashCode+"}";
 
     }
 

@@ -89,6 +89,7 @@ namespace Fuse
             
             // ReSharper disable once VirtualMemberCallInConstructor
             ShaderCode = ShaderNodesUtil.Evaluate(theSource, templateMap);
+            ShaderCode = ShaderNodesUtil.EvaluateIDs(theSource);
             // ReSharper disable once VirtualMemberCallInConstructor
             ShaderCode = CheckCode(ShaderCode);
             ShaderName = "Shader_" + Math.Abs(ShaderCode.GetHashCode());

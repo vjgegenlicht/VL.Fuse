@@ -135,7 +135,7 @@ namespace Fuse
             var idMap = new Dictionary<string, string>();
             return Regex.Replace(
                 theShaderTemplate, 
-                @"\$\{#(?<key>[^}]+)\}", 
+                @"\$\{(?<key>[^}]+)\}", 
                 m =>
                 {
                     var key = m.Groups["key"].Value;
