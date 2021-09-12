@@ -4472,7 +4472,7 @@
           </p:NodeReference>
           <Patch Id="VCNtkXDlVRmLaPhMLBf0md">
             <Canvas Id="KUx4zVyLRAdQKKDzjSCW5Q" CanvasType="Group">
-              <Node Bounds="452,402,427,154" Id="OHzB5th4JoDO12fiCGeqp2">
+              <Node Bounds="409,390,506,214" Id="OHzB5th4JoDO12fiCGeqp2">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -4481,18 +4481,18 @@
                 <Pin Id="Ep6pIMAUIX7NDe3eZjuFnF" Name="Force" Kind="InputPin" />
                 <Pin Id="TUTnIPziJirLdFwRwjQ00p" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="UA8llKIPXN5LtkDbWMJ9Pu" Name="Has Changed" Kind="OutputPin" />
-                <ControlPoint Id="RCqHGV8DLMqPgDG33eY0AL" Bounds="464,408" Alignment="Top" />
-                <ControlPoint Id="DofcsxqDSjiQY9P1ibwP6i" Bounds="580,408" Alignment="Top" />
-                <ControlPoint Id="NH2WCrS6IXmNf0JVxXXEl5" Bounds="543,549" Alignment="Bottom">
+                <ControlPoint Id="RCqHGV8DLMqPgDG33eY0AL" Bounds="421,397" Alignment="Top" />
+                <ControlPoint Id="DofcsxqDSjiQY9P1ibwP6i" Bounds="580,397" Alignment="Top" />
+                <ControlPoint Id="NH2WCrS6IXmNf0JVxXXEl5" Bounds="543,599" Alignment="Bottom">
                   <p:TypeAnnotation>
                     <Choice Kind="TypeFlag" Name="IFunctionInvokeNode" />
                   </p:TypeAnnotation>
                 </ControlPoint>
-                <ControlPoint Id="VUYGWiaTYr0Qbd8uNovOvk" Bounds="754,408" Alignment="Top" />
+                <ControlPoint Id="VUYGWiaTYr0Qbd8uNovOvk" Bounds="754,397" Alignment="Top" />
                 <Patch Id="UlL1bOUcz0FQAHRtwbtQ1A" ManuallySortedPins="true">
                   <Patch Id="QOBsXmaTPQqN9j6ZOtj2Ne" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="UrnvmMK8iKQNjMB4PpidYM" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="643,464,45,19" Id="UVLq4LXii88MS4cI2pn4sA">
+                  <Node Bounds="650,489,85,19" Id="UVLq4LXii88MS4cI2pn4sA">
                     <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -4505,7 +4505,7 @@
                     <Pin Id="Oqro3pfExpsO3mmRgE1697" Name="Input 4" Kind="InputPin" />
                     <Pin Id="EqUZJtxzRiyOPURzmzRYdk" Name="Input 5" Kind="InputPin" />
                   </Node>
-                  <Pad Id="C23UJhbIQnFPEoRMKscLcg" Bounds="504,491">
+                  <Pad Id="C23UJhbIQnFPEoRMKscLcg" Bounds="501,509">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="FunctionInvokeNode" />
                       <p:TypeArguments>
@@ -4515,7 +4515,7 @@
                       </p:TypeArguments>
                     </p:TypeAnnotation>
                   </Pad>
-                  <Node Bounds="540,515,75,19" Id="LmYSDDZ6yWNOVge3uTk2Oc">
+                  <Node Bounds="540,548,75,19" Id="LmYSDDZ6yWNOVge3uTk2Oc">
                     <p:NodeReference LastCategoryFullName="Fuse.Core.Base.Function" LastSymbolSource="Fuse.Core.Base.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="MakeGeneric" />
@@ -4532,19 +4532,32 @@
                     </p:NodeReference>
                     <Pin Id="N6pD6jXSl2gPb8b0fBEfPP" Name="Result" Kind="OutputPin" />
                   </Node>
-                  <Pad Id="BIYwCTS5OXNMTdFlyaUjxz" Comment="Input 5" Bounds="777,505,35,15" ShowValueBox="true" isIOBox="true" Value="text">
+                  <Pad Id="BIYwCTS5OXNMTdFlyaUjxz" Comment="outputName" Bounds="789,455,35,15" ShowValueBox="true" isIOBox="true" Value="">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="String" />
                       <FullNameCategoryReference ID="Primitive" />
                     </p:TypeAnnotation>
                   </Pad>
+                  <Node Bounds="651,525,89,26" Id="UYJJ3X6kb1jN0srbiTZCZB">
+                    <p:NodeReference LastCategoryFullName="Fuse.Core.Base.Function.FunctionInvokeNode" LastSymbolSource="Fuse.Core.Base.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                      <CategoryReference Kind="ClassType" Name="FunctionInvokeNode" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="PiRtqIy9KYfNyy5MW9BE9O" Name="The Delegate" Kind="InputPin" />
+                    <Pin Id="IwVqqtAt5D4PVIrrvK1ALJ" Name="The Parameters" Kind="InputPin" />
+                    <Pin Id="SpbK9UeL12YOD8K5tM4AZV" Name="The Id" Kind="InputPin" />
+                    <Pin Id="CI53qNBs0OCPNX5EnLG3ev" Name="The Default" Kind="InputPin" />
+                    <Pin Id="EtyJgNU6UjqP6t16bPgSSu" Name="Output Name" Kind="InputPin" />
+                    <Pin Id="Ct4I4kGUEUnLZJeRTK5kT9" Name="Output" Kind="StateOutputPin" />
+                  </Node>
                 </Patch>
               </Node>
-              <ControlPoint Id="Mh0hPz2i0RoNXLA265wDwm" Bounds="464,318" />
-              <ControlPoint Id="Sl14ypo3lz2QHSNFBQG8Vn" Bounds="582,312" />
-              <ControlPoint Id="N6adyJUeZoHNDNECr5I2AC" Bounds="834,310" />
-              <ControlPoint Id="P7AzhPCBJhmNKS8HWnMlh3" Bounds="690,313" />
-              <Node Bounds="542,634,89,26" Id="Ixc9PXzf885OKrnhtYRG0u">
+              <ControlPoint Id="Mh0hPz2i0RoNXLA265wDwm" Bounds="421,299" />
+              <ControlPoint Id="Sl14ypo3lz2QHSNFBQG8Vn" Bounds="582,299" />
+              <ControlPoint Id="N6adyJUeZoHNDNECr5I2AC" Bounds="834,299" />
+              <ControlPoint Id="P7AzhPCBJhmNKS8HWnMlh3" Bounds="690,299" />
+              <Node Bounds="542,667,89,26" Id="Ixc9PXzf885OKrnhtYRG0u">
                 <p:NodeReference LastCategoryFullName="Fuse.Core.Base.AbstractShaderNode" LastSymbolSource="Fuse.Core.Base.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="AbstractOutput" />
@@ -4554,7 +4567,7 @@
                 <Pin Id="SJWLTbZMBNPMFdtYErbqp6" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="S54PqWvafJ7LrYWY5XjjhJ" Name="Result" Kind="OutputPin" />
               </Node>
-              <Node Bounds="542,594" Id="Dyxfqm9Vgq3Pt238ANLwur">
+              <Node Bounds="542,627,58,19" Id="Dyxfqm9Vgq3Pt238ANLwur">
                 <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="HardCast" />
@@ -4562,7 +4575,34 @@
                 <Pin Id="R4mRIXA1EZyOrTsWrd7Qbm" Name="Input" Kind="StateInputPin" />
                 <Pin Id="KtYL5lZ46vHQT0DnzB0pLT" Name="Result" Kind="OutputPin" />
               </Node>
-              <ControlPoint Id="EVfd7AksHUzNtbjG8WzzfG" Bounds="633,696" />
+              <ControlPoint Id="EVfd7AksHUzNtbjG8WzzfG" Bounds="628,727" />
+              <Pad Id="EU54tMNtF57OpzkXoADpNW" Bounds="941,341,148,141" ShowValueBox="true" isIOBox="true" Value="creating FunctionInvokeNode&lt;?&gt; via Reflection">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="PRBmLfdVpOyMfbWwjzWVsn" Bounds="940,494,154,159" ShowValueBox="true" isIOBox="true" Value="we need to be careful when feeding the arguments of the constructor at a).&#xD;&#xA;&#xD;&#xA;Compare with the Create node ">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="Krrftj556FBONi001jgvgX" Bounds="417,487,159,20" ShowValueBox="true" isIOBox="true" Value="FunctionInvokeNode&lt;?&gt;">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="DEBV3FEitgFPlJUmryn0jz">
               <Fragment Id="CRotfOkYkLVPmMZncnmxut" Patch="J22EKBGCRiRMoA1LLjYAGN" Enabled="true" />
@@ -4626,7 +4666,7 @@
           </p:NodeReference>
           <Patch Id="EufoaWv49BqNzQD8rozG2V">
             <Canvas Id="JGirW9ukyzBQTAyLCIa3kA" CanvasType="Group">
-              <Node Bounds="387,228,322,320" Id="Hovc5yreiUpMz9eTVnXwjM">
+              <Node Bounds="215,236,449,456" Id="Hovc5yreiUpMz9eTVnXwjM">
                 <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -4635,13 +4675,13 @@
                 <Pin Id="SLpmD3Y4N7tQP8blikl2sw" Name="Force" Kind="InputPin" />
                 <Pin Id="V7CMctDtqnDP3gLYzwJU3d" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="Esybg3A81CwO5uCGCl5dvV" Name="Has Changed" Kind="OutputPin" />
-                <ControlPoint Id="T1JsmHvUUY7O6i9EK6wM59" Bounds="482,542" Alignment="Bottom" />
-                <ControlPoint Id="Lp852aYPlkyOdxxlCIpTUa" Bounds="565,235" Alignment="Top" />
-                <ControlPoint Id="OKBwNhIdSytMF5ZiRw7fEh" Bounds="458,234" Alignment="Top" />
+                <ControlPoint Id="T1JsmHvUUY7O6i9EK6wM59" Bounds="428,686" Alignment="Bottom" />
+                <ControlPoint Id="Lp852aYPlkyOdxxlCIpTUa" Bounds="649,242" Alignment="Top" />
+                <ControlPoint Id="OKBwNhIdSytMF5ZiRw7fEh" Bounds="426,242" Alignment="Top" />
                 <Patch Id="EVK3VQ1a52PLh9NIxQszec" ManuallySortedPins="true">
                   <Patch Id="V1YiroYpWtQNcVhuMeYkAx" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="VhasceOexmkLkBkSCfAzzF" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="516,341,75,19" Id="CZ9mnpTNrJAL3zLCbeSTVH">
+                  <Node Bounds="388,386,75,19" Id="CZ9mnpTNrJAL3zLCbeSTVH">
                     <p:NodeReference LastCategoryFullName="Fuse.Core.Base.Function" LastSymbolSource="Fuse.Core.Base.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="MakeGeneric" />
@@ -4651,7 +4691,7 @@
                     <Pin Id="JxQ19G0ZylXNcPXDgRQp8j" Name="Input" Kind="InputPin" />
                     <Pin Id="AojrnH1z4iTQN4f7SWD6d1" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Pad Id="RHk7b3AsFh4MLGtfbh0xdf" Bounds="498,322">
+                  <Pad Id="RHk7b3AsFh4MLGtfbh0xdf" Bounds="317,333">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="GpuValue" />
                       <p:TypeArguments>
@@ -4661,7 +4701,7 @@
                       </p:TypeArguments>
                     </p:TypeAnnotation>
                   </Pad>
-                  <Node Bounds="616,292,39,19" Id="DqdOVTmG6eQNXBiDJ1Qw9c">
+                  <Node Bounds="514,301,51,19" Id="DqdOVTmG6eQNXBiDJ1Qw9c">
                     <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -4670,13 +4710,13 @@
                     <Pin Id="PQLZBPYUmkyN17vOqUmtvB" Name="Result" Kind="OutputPin" />
                     <Pin Id="Ku87gMvvJnzODAspImMnri" Name="Input" Kind="InputPin" />
                   </Node>
-                  <Pad Id="AltgEoNovtcO3NoxUwgkoW" Bounds="636,257,42,15" ShowValueBox="true" isIOBox="true" Value="dummy">
+                  <Pad Id="AltgEoNovtcO3NoxUwgkoW" Comment="name" Bounds="516,270,42,15" ShowValueBox="true" isIOBox="true" Value="">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="String" />
                       <FullNameCategoryReference ID="Primitive" />
                     </p:TypeAnnotation>
                   </Pad>
-                  <Node Bounds="441,433,75,19" Id="RG26cwaPe4TOEoX8N3QxV6">
+                  <Node Bounds="387,577,75,19" Id="RG26cwaPe4TOEoX8N3QxV6">
                     <p:NodeReference LastCategoryFullName="Fuse.Core.Base.Function" LastSymbolSource="Fuse.Core.Base.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="MakeGeneric" />
@@ -4686,7 +4726,7 @@
                     <Pin Id="QmBrnF9lB5yQONQDGgjKQO" Name="Input" Kind="InputPin" />
                     <Pin Id="UtiHOQsD4PgOCoauHKArSZ" Name="Output" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="529,389,39,19" Id="NOGNreYWizZMkYDCEr46wq">
+                  <Node Bounds="514,478,86,19" Id="NOGNreYWizZMkYDCEr46wq">
                     <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -4696,7 +4736,7 @@
                     <Pin Id="HWfe5janU0fQApZRgr6Dzi" Name="Input" Kind="InputPin" />
                     <Pin Id="PprDcicHUZdNiPsybFSCkB" Name="Input 2" Kind="InputPin" />
                   </Node>
-                  <Pad Id="ONddtc5Xe4iO98VvymUmBz" Bounds="415,410">
+                  <Pad Id="ONddtc5Xe4iO98VvymUmBz" Bounds="309,546">
                     <p:TypeAnnotation>
                       <Choice Kind="TypeFlag" Name="FunctionParameter" />
                       <p:TypeArguments>
@@ -4706,7 +4746,7 @@
                       </p:TypeArguments>
                     </p:TypeAnnotation>
                   </Pad>
-                  <Node Bounds="442,483,89,26" Id="BLVkrMuZAxNQNgy8snNVNO">
+                  <Node Bounds="387,627,89,26" Id="BLVkrMuZAxNQNgy8snNVNO">
                     <p:NodeReference LastCategoryFullName="Fuse.Core.Base.AbstractShaderNode" LastSymbolSource="Fuse.Core.Base.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="OperationCallFlag" Name="AbstractOutput" />
@@ -4716,11 +4756,66 @@
                     <Pin Id="T3YiStN6gL9QDgY7JA7pLC" Name="Output" Kind="OutputPin" />
                     <Pin Id="JnjVZHd2jPhNb4tKltr3ON" Name="Result" Kind="OutputPin" />
                   </Node>
+                  <Pad Id="EdJWQX19OWzPFa1ymdyul3" Bounds="271,308,101,25" ShowValueBox="true" isIOBox="true" Value="GPUValue&lt;?&gt;">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                    <p:ValueBoxSettings>
+                      <p:fontsize p:Type="Int32">9</p:fontsize>
+                      <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                    </p:ValueBoxSettings>
+                  </Pad>
+                  <Pad Id="AdkL9Tzf841Nk2t1YLMu5X" Bounds="231,530,145,19" ShowValueBox="true" isIOBox="true" Value="FunctionParameter&lt;?&gt;">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:TypeAnnotation>
+                    <p:ValueBoxSettings>
+                      <p:fontsize p:Type="Int32">9</p:fontsize>
+                      <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                    </p:ValueBoxSettings>
+                  </Pad>
+                  <Node Bounds="514,342,51,26" Id="IDQIoEBAstdLV4TJgbjvw5">
+                    <p:NodeReference LastCategoryFullName="Fuse.Core.Base.GpuValue" LastSymbolSource="Fuse.Core.Base.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="GpuValue" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                    </p:NodeReference>
+                    <Pin Id="EpMiNfbZoipOvuvQnmJ5tW" Name="The Name" Kind="InputPin" />
+                    <Pin Id="TztD2aGMwgBLWOucpwb28n" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Node Bounds="514,518,87,26" Id="Q9UwcwEhlWhMIDBe5ekAv4">
+                    <p:NodeReference LastCategoryFullName="Fuse.Core.Base.Function.FunctionParameter" LastSymbolSource="Fuse.Core.Base.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="FunctionParameter" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                    </p:NodeReference>
+                    <Pin Id="SlOK4zLaYaXQWgI7kyuhu3" Name="The Type" Kind="InputPin" />
+                    <Pin Id="HgIab6EyAtqOV5Dy6IkfKX" Name="The Id" Kind="InputPin" />
+                    <Pin Id="CZFhJaqijTZL6z03aaGeWN" Name="Output" Kind="StateOutputPin" />
+                  </Node>
                 </Patch>
               </Node>
-              <ControlPoint Id="Ug8aoqLKlrwPbVPs4r2gbD" Bounds="481,580" />
-              <ControlPoint Id="Gz1QyuLe69bLpNTPt5Nqrf" Bounds="565,196" />
-              <ControlPoint Id="VESaBrF9VTVOOa4SlApSsQ" Bounds="403,169" />
+              <ControlPoint Id="Ug8aoqLKlrwPbVPs4r2gbD" Bounds="427,724" />
+              <ControlPoint Id="Gz1QyuLe69bLpNTPt5Nqrf" Bounds="649,203" />
+              <ControlPoint Id="VESaBrF9VTVOOa4SlApSsQ" Bounds="426,198" />
+              <Pad Id="Ka9A3CjDXV6NWLalvmN6oj" Bounds="746,237,148,141" ShowValueBox="true" isIOBox="true" Value="creating both GPUValue&lt;?&gt; and FunctionParameter&lt;?&gt; via Reflection">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
+              <Pad Id="IuJ4DPupH8zLmRAJCyE4FU" Bounds="745,390,161,192" ShowValueBox="true" isIOBox="true" Value="we need to be careful when feeding the arguments of the constructor.&#xD;&#xA;&#xD;&#xA;Compare with the Create nodes of those types">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+                <p:ValueBoxSettings>
+                  <p:fontsize p:Type="Int32">9</p:fontsize>
+                  <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+                </p:ValueBoxSettings>
+              </Pad>
             </Canvas>
             <ProcessDefinition Id="FmdBcaFN8qFOrFLpzqlQPY">
               <Fragment Id="U5oluCcVr42OqkTXR2Vnp1" Patch="IXM32eD8SvGMdFb8QNTKrV" Enabled="true" />

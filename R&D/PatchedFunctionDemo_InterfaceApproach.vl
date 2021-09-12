@@ -80,7 +80,7 @@
                         <Choice Kind="TypeFlag" Name="AbstractGpuValue" />
                       </p:TypeAnnotation>
                     </Pad>
-                    <Node Bounds="554,410,211,99" Id="MQM3LlMNP6CO4G2jCKNA78">
+                    <Node Bounds="554,410,204,100" Id="MQM3LlMNP6CO4G2jCKNA78">
                       <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                         <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -100,7 +100,7 @@
                           <Pin Id="DvNK7Jb899iOuvIZPdN6ox" Name="Output" Kind="StateOutputPin" />
                           <Pin Id="IFdjVLDRZLsONJcO6ADBGc" Name="Data Type" Kind="OutputPin" />
                         </Node>
-                        <Node Bounds="652,469,101,19" Id="KkHVf031SKNOMELUUOy7KC">
+                        <Node Bounds="645,469,101,19" Id="KkHVf031SKNOMELUUOy7KC">
                           <p:NodeReference LastCategoryFullName="Fuse.Core.Base.Function" LastSymbolSource="Fuse.Core.Base.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="FunctionParameter (1 Parameter Dynamic)" />
@@ -685,7 +685,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="431,500,98,19" Id="Imd0tgsCHdzMeoMqQQpsGO">
+          <Node Bounds="374,493,98,19" Id="Imd0tgsCHdzMeoMqQQpsGO">
             <p:NodeReference LastCategoryFullName="Fuse.Core.Base" LastSymbolSource="Fuse.Core.Base.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawShaderGraph" />
@@ -704,7 +704,7 @@
             <Pin Id="KEby2KvEdPdOcat7DTNzbJ" Name="lastError" Kind="OutputPin" />
             <Pin Id="Dwc0JgwpgLsP9dXtNOKcJL" Name="Shader Code" Kind="OutputPin" />
           </Node>
-          <Node Bounds="477,416,65,19" Id="GgVUL9Gx0zlLZIdZ7qdaLn">
+          <Node Bounds="420,409,65,19" Id="GgVUL9Gx0zlLZIdZ7qdaLn">
             <p:NodeReference LastCategoryFullName="Fuse.Core.Base" LastSymbolSource="Fuse.Core.Base.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="x+y+z+w (join)" />
@@ -715,8 +715,8 @@
             <Pin Id="QZtKAcA90gfQJW95XojOsD" Name="w" Kind="InputPin" />
             <Pin Id="MJpTrxQIek0LMlNpB1ciSZ" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="MT16cu104WhLYhv2ZDsWW5" Comment="Shader Code" Bounds="526,592,1167,570" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="477,457,69,19" Id="ESlzmfScCYKP9MasWcixLL">
+          <Pad Id="MT16cu104WhLYhv2ZDsWW5" Comment="Shader Code" Bounds="254,547,1195,513" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="420,450,69,19" Id="ESlzmfScCYKP9MasWcixLL">
             <p:NodeReference LastCategoryFullName="Fuse.Core.Color" LastSymbolSource="Fuse.Core.Color.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SRGBToRGB" />
@@ -727,7 +727,7 @@
             <Pin Id="JQsgj5EZmrvQHbqdS3Vi8i" Name="sRGB" Kind="InputPin" />
             <Pin Id="R0TIAapRrDfMGyWgbI5SAT" Name="RGB" Kind="OutputPin" />
           </Node>
-          <Node Bounds="570,285,85,19" Id="EaNX1KW8D6sLpHcm4uvIxZ">
+          <Node Bounds="524,278,85,19" Id="EaNX1KW8D6sLpHcm4uvIxZ">
             <p:NodeReference LastCategoryFullName="Fuse" LastSymbolSource="PatchedFunctionDemo_InterfaceApproach.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Remap" />
@@ -740,7 +740,7 @@
             <Pin Id="FnycuHRqj3ENtF6yyOTt0r" Name="destMax" Kind="InputPin" />
             <Pin Id="R0N0F9kpBXaOG4pJiEY0ax" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="570,333,85,19" Id="CKgNP5XFfvBOj8Ey8iDQK6">
+          <Node Bounds="524,326,85,19" Id="CKgNP5XFfvBOj8Ey8iDQK6">
             <p:NodeReference LastCategoryFullName="Fuse" LastSymbolSource="PatchedFunctionDemo_InterfaceApproach.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Remap" />
@@ -753,7 +753,7 @@
             <Pin Id="Ls3DXmy1hkUPdGaHZYInnn" Name="destMax" Kind="InputPin" />
             <Pin Id="JmF4f8Ybn83O9ad1OCMndF" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="570,381,85,19" Id="NZHcRkmKqLkMj5C9dsna1Q">
+          <Node Bounds="524,374,85,19" Id="NZHcRkmKqLkMj5C9dsna1Q">
             <p:NodeReference LastCategoryFullName="Fuse" LastSymbolSource="PatchedFunctionDemo_InterfaceApproach.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Remap" />
@@ -766,6 +766,15 @@
             <Pin Id="Ta9DcBQd2ICLuIQwFqPSMq" Name="destMax" Kind="InputPin" />
             <Pin Id="PhEpsvnKNJjNVrUkmHKxym" Name="Output" Kind="OutputPin" />
           </Node>
+          <Pad Id="DBZPRhcXNSQM1UAcJ4u91Q" Bounds="825,481,402,19" ShowValueBox="true" isIOBox="true" Value="TODO: Remap should only appear once in the emitted shader code">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="E6lFE146DLIPrkYRtRNrMR" Name="Create" />
         <Patch Id="KYmKERunoEnOlVZQpC0JDP" Name="Update" />
