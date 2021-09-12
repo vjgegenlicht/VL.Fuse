@@ -26,6 +26,7 @@
               <Pin Id="QtW1cw8KNZYPkSDckmtwyz" Name="Has Changed" Kind="OutputPin" />
               <ControlPoint Id="UAOIXzec7MbMXuKLayUEO7" Bounds="746,286" Alignment="Top" />
               <ControlPoint Id="DcYtQJ3KDoTP89uCglhqqW" Bounds="416,286" Alignment="Top" />
+              <ControlPoint Id="BJbQM0RK7haLMI2Nj4MbEQ" Bounds="921,286" Alignment="Top" />
               <Patch Id="Od58yg0muQlMiVqDKzcjSU" ManuallySortedPins="true">
                 <Node Bounds="402,332,481,197" Id="SkzubkUPX5TPjz3vaKjFJF">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
@@ -191,9 +192,9 @@
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="ProcessAppFlag" Name="Function (Dynamic)" />
                           </p:NodeReference>
+                          <Pin Id="RyMo8UhVD3JPWzpY1eqRjR" Name="Data Type Of Output" Kind="InputPin" />
                           <Pin Id="LsWuT4ubKWCN6Wo5J98JrG" Name="Function" Kind="InputPin" />
                           <Pin Id="BL45vQsKqo8NlZd7860y46" Name="Parameters" Kind="InputPin" />
-                          <Pin Id="RyMo8UhVD3JPWzpY1eqRjR" Name="Data Type Of Output" Kind="InputPin" />
                           <Pin Id="LsTMI3LgBKILtVn6iXPSF2" Name="Id" Kind="InputPin" />
                           <Pin Id="NjSvta5DUUhMkYf6zVdTAV" Name="GpuValue" Kind="OutputPin" />
                         </Node>
@@ -256,7 +257,6 @@
                 <Patch Id="BdE2lfUcmxMP8opt4Vu05k" Name="Then" ManuallySortedPins="true" />
                 <ControlPoint Id="QaQHRy8VFv4Pg01zILmp48" Bounds="924,935" />
               </Patch>
-              <ControlPoint Id="BJbQM0RK7haLMI2Nj4MbEQ" Bounds="921,286" Alignment="Top" />
             </Node>
             <Node Bounds="644,219,105,26" Id="FprKFmaSeJVLoP4BRYfPtt">
               <p:NodeReference LastCategoryFullName="VL.ICustomRegion" LastSymbolSource="VL.Lang.vl">
