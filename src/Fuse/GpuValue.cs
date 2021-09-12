@@ -1,4 +1,5 @@
 ﻿using Stride.Engine;
+using System;
 using VL.Core;
 using VL.UI.Core;
 namespace Fuse
@@ -23,6 +24,8 @@ namespace Fuse
         public abstract string TypeName(); 
 
         public AbstractShaderNode ParentNode { get; set; }
+
+        public abstract Type DataType { get; }
     }
 
     [Monadic(typeof(GpuValueMonadicFactory<>))]
@@ -46,6 +49,7 @@ namespace Fuse
 
         public override string ID => Name + "_" + GetHashCode();
 
+        public override Type DataType => typeof(T);
     }
 
     public class GpuValuePassThrough<T> : GpuValue<T>
